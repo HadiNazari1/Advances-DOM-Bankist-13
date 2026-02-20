@@ -29,4 +29,14 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     closeModal();
   }
+
+});
+const header = document.querySelector('header');
+
+const message= document.createElement('div');
+message.classList.add('cookie-message');
+message.innerHTML='We use cookies for improved functionality and analytics. <button class="btn btn--close-cookie">got it </button>';
+header.append(message);
+
+document.querySelector('.btn--close-cookie').addEventListener('click', function(){    message.remove();
 });
