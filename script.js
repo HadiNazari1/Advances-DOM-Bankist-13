@@ -40,3 +40,5 @@ header.append(message);
 
 document.querySelector('.btn--close-cookie').addEventListener('click', function(){    message.remove();
 });
+// 무범
+
