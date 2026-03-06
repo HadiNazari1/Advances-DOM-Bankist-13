@@ -66,11 +66,19 @@ document.querySelector('.nav').addEventListener('click', function(e){
     this .style.backgroundColor=randomColor();
 
 })
-document.querySelector('.nav__links').forEach(function(el){
-    el.addEventListener('click', function(e){
-        console.log('linksu');   
-    })
+
+document.querySelector('.nav__link').addEventListener('click',function(e){
+
+    e.preventDefault();
+    if (e.target.classList.contains('nav__link')){
+        const id=e.target.getAttribute('href');
+        document.querySelector(id).scrollIntoView({behavior:'smooth'});
+
+    }
+
+   
 })
+
 
 
 
