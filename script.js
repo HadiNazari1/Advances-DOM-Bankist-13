@@ -80,6 +80,12 @@ document.querySelector('.nav__link').addEventListener('click',function(e){
 })
 
 
+const h1= document.querySelector('h1');
+h1.addEventListener('click',function(e){
+    alert('You clicked the heading');
+    e.stopImmediatePropagation();
+    
+})
 
 
 
