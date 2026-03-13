@@ -86,16 +86,6 @@ h1.addEventListener('click',function(e){
     e.stopImmediatePropagation();
     
 })
-const h1= document.querySelector('h1');
-console.log(h1.querySelectorAll('.highlight'));
-console.log(h1.childNodes);
-console.log(h1.children);
-h1.firstElementChild.ariaDescribedByElements.color='white';
-h1.lastElementChild.computedStyleMap.conlor='red';
-
-h1.closest('.header').computedStyleMap.backgroundColor='var(--gradient-secondary)';
-
-
 
 
 
