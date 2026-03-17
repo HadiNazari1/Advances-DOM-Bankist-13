@@ -88,7 +88,14 @@ h1.addEventListener('click',function(e){
 })
 
 
+const tabs=document.querySelectorAll('.operations__tab');
+const tabsContainer= document.querySelector('.operations__tab-container');
+const tabsContent=document.querySelectorAll('.operations__content');
 
+tabsContainer.addEventListener('click', function(e){
+  const clicked=e.target.closerst('.operations__tab');
+   
+})
 
 
 
