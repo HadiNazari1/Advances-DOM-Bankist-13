@@ -116,6 +116,7 @@ const handleHolver=function(e){
         });
     }
 }
+//Passing "argument" into handler
 
 nav.addEventListener('mouseover', handleHolver.bind(0.5));
 nav.addEventListener('mouseout', handleHolver.bind(1));
