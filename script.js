@@ -101,9 +101,24 @@ tabsContainer.addEventListener('click', function(e){
 //Activate tab
   clicked.classList.add('operations__tab--active');
   document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add('operations__content--active');
-
-   
 })
+const nav= document.querySelector('.nav');
+
+const handleHolver=function(e){
+    if (e.target.classList.contains('nav__link')){
+        const link=e.target;
+        const siblings=link.closest('.nav').querySelectorAll('.nav__link');
+        const logo= link.closest('.nav').querySelector('img');
+        siblings.forEach(el=> {
+            if (el !== link) {
+                el.style.opacity = this;
+            }
+        });
+    }
+}
+
+nav.addEventListener('mouseover', handleHolver.bind(0.5));
+nav.addEventListener('mouseout', handleHolver.bind(1));
 
 
 
