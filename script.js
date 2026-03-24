@@ -121,5 +121,12 @@ const handleHolver=function(e){
 nav.addEventListener('mouseover', handleHolver.bind(0.5));
 nav.addEventListener('mouseout', handleHolver.bind(1));
 
+const initialCoords=section1.getBoundingClientRect();
+
+window.addEventListener('scroll', function(){
+  console.log(this.window.scrollY);
+  if (this.window.scrollY > initialCoords.top)nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
+})
 
 
