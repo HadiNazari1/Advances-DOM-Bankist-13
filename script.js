@@ -121,6 +121,9 @@ const handleHolver=function(e){
 nav.addEventListener('mouseover', handleHolver.bind(0.5));
 nav.addEventListener('mouseout', handleHolver.bind(1));
 
+
+// Sticky Navigation: Intersection Observer API
+
 const initialCoords=section1.getBoundingClientRect();
 
 window.addEventListener('scroll', function(){
