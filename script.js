@@ -148,6 +148,9 @@ const headerObserver= new IntersectionObserver(stickyNav,{
 });
 headerObserver.observe(header);
 
+
+//Reveal Sections
+
 const allSevtions=document.querySelectorAll('.section');
 
 const revealSection=function(entries,observer){
