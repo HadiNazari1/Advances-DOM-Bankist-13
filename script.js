@@ -168,3 +168,8 @@ allSections.forEach(function(section){
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 } );
+function test(){
+  console.log(new Date());
+
+}
+var timerId=setTimeout(test,2000)
